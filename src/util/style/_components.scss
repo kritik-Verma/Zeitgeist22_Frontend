@@ -1,0 +1,79 @@
+@import "./fonts";
+@mixin waveHeading {
+    .waveHeading_container {
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+    }
+    .waveHeading_container > h2 {
+        position: absolute;
+        color: #fff;
+        font-size: 3.5em;
+    }
+    .waveHeading_container > h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 1px #03a9f4;
+    }
+    .waveHeading_container > h2:nth-child(2) {
+        color: #03a9f4;
+        animation: waveHeading 4s infinite;
+    }
+
+    @keyframes waveHeading {
+        0%,
+        100% {
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }
+        50% {
+            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+@mixin eventCard {
+    .events__card {
+        position: relative;
+        width: 330px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .events__card::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 140%;
+        background: linear-gradient(#00ccff, #d400d4);
+        animation: animate 3s linear infinite;
+    }
+    .events__card::after {
+        content: "";
+        position: absolute;
+        inset: 4px;
+        background-color: #0e1538;
+        border-radius: 17px;
+    }
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .events__card .events__cardContent {
+        justify-self: start;
+        color: #fff;
+        z-index: 99;
+    }
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

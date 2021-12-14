@@ -1,0 +1,13 @@
+@import "../../util/style/components";
+@include waveHeading;
+
+.events__content {
+    padding: 20px;
+    margin: 20px;
+    background: #0e1538d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}

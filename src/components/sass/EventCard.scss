@@ -1,0 +1,33 @@
+@import "../../util/style/components";
+@include waveHeading;
+@include eventCard;
+
+.events__cardContent-imgContainer {
+    @include center;
+}
+.events__card {
+    margin: 10px;
+    transition: transform 500ms;
+    &:hover {
+        transform: scale(1.03);
+    }
+    .events__cardContent-heading {
+        @include center;
+        transform: translateY(-12px);
+    }
+    .events__cardContent-summery {
+        @include center;
+        text-align: center;
+        padding: 15px;
+    }
+    .events__cardContent-image {
+        object-fit: contain;
+        height: 12rem;
+        border-radius: 20px;
+        margin-left: 9px;
+    }
+    .events__cardContent-btn {
+        @include center;
+        // margin-top: 20px;
+    }
+}
