@@ -1,8 +1,9 @@
+@import "../../util/style/fonts";
 // ///////////////////////////////////////////////////
 .eventRegistration_wallpaper {
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #04fafd 5%, #119dff 50%, #030423);
+    background: linear-gradient(180deg, #34abad 5%, #286794 50%, #030423);
     position: absolute;
     overflow: hidden;
 }
@@ -12,15 +13,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* From https://css.glass */
-    background: rgba(27, 27, 27, 0.33);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.6px);
-    -webkit-backdrop-filter: blur(12.6px);
+    background-color: rgba(255, 255, 255, 0.377);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     border: 1px solid rgba(27, 27, 27, 0.07);
-    height: 600px;
-    width: 600px;
+    height: 90%;
+    width: 40rem;
     color: #fff;
 }
 
@@ -127,5 +127,110 @@
     }
     100% {
         transform: scale(1.3) translateY(-200px) rotate(360deg);
+    }
+}
+
+// ///////////////////////////////
+
+.eventRegistration__content {
+    overflow-y: scroll;
+}
+.eventRegistration__content-heading > h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 34, 107);
+    font-family: "Playfair Display", sans-serif;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+.eventRegistration__content-section1-image {
+    opacity: 1;
+    z-index: 199;
+    object-fit: contain;
+    height: 10rem;
+}
+.eventRegistration__content-section1-inputItem > input,
+.eventRegistration__content-section1-inputItem > span {
+    opacity: 1;
+}
+.eventRegistration__content-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px 10px 10px;
+    > .eventRegistration__eventBox {
+        flex: 0.3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 20px;
+        background-color: white;
+        padding: 15px;
+        margin-left: 30px;
+        > img {
+            border-radius: 20px;
+            object-fit: contain;
+            height: 9rem;
+        }
+        > h4 {
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 4px;
+        }
+    }
+    > .eventRegistration__inputs {
+        flex: 0.7;
+        display: flex;
+        // width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // height: 100%;
+        width: 80%;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 15px;
+        > .input {
+            margin: 10px;
+            > h4 {
+                color: black;
+                text-transform: capitalize;
+            }
+            // margin: 10px 0px;
+            > input {
+                margin: 2px;
+                padding: 10px;
+            }
+        }
+    }
+}
+// ad8771 playfair
+.eventRegistration__submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > input {
+        margin: 20px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: 2px solid rgba(113, 222, 255, 0.726);
+        transition: background-color 1s;
+        outline: none;
+        &:hover {
+            background-color: rgba(113, 222, 255, 0.726);
+            cursor: pointer;
+        }
     }
 }

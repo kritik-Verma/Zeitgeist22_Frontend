@@ -1,0 +1,30 @@
+@import "../../util/style/fonts";
+.input {
+    margin: 10px;
+    > h4 {
+        color: black;
+        text-transform: capitalize;
+    }
+    // margin: 10px 0px;
+    > input {
+        margin: 2px;
+        padding: 10px;
+    }
+}
+.eventRegistration__content-section2 {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > .eventRegistration__content-section2_inputs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Button } from "@material-ui/core";
 import "./sass/EventCard.scss";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function EventCard(props) {
   const { EventID, Image, Title, Data, ruleboock } = props;
@@ -36,14 +36,17 @@ function EventCard(props) {
           >
             Register
           </Button>
-          <Button
-            style={{
-              color: "white",
-              border: "2px solid white ",
-            }}
-          >
-            ruleboock
-          </Button>
+          <Link to={ruleboock} style={{ textDecoration: "none" }}>
+            {" "}
+            <Button
+              style={{
+                color: "white",
+                border: "2px solid white ",
+              }}
+            >
+              ruleboock
+            </Button>
+          </Link>
 
           <div
             ref={EventId}
