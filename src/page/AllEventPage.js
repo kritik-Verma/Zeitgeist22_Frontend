@@ -7,6 +7,24 @@ function AllEventPage() {
   const history = useHistory();
   return (
     <div className="allEventPage">
+      <div className="allEventPage__web1 allEventPage__web">
+        <img src="/images/web.png" alt="" />
+      </div>
+      <div className="allEventPage__web allEventPage__web2">
+        <img src="/images/web4.png" alt="" />
+      </div>
+      <div className="allEventPage__web allEventPage__web3">
+        <img src="/images/web3.png" alt="" />
+      </div>
+      <div className="allEventPage__web allEventPage__web4">
+        <img src="/images/web2.png" alt="" />
+      </div>
+      <div className="allEventPage__web allEventPage__web5">
+        <img src="/images/web3.png" alt="" />
+      </div>
+      <div className="allEventPage__web allEventPage__web6">
+        <img src="/images/web.png" alt="" />
+      </div>
       <div
         className="allEventPage__card1"
         onClick={() => history.push("/events/tech")}

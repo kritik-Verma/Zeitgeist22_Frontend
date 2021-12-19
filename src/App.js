@@ -5,13 +5,17 @@ import { requests } from "./util/request";
 import AllEventPage from "./page/AllEventPage";
 import EventRegistration from "./page/EventRegistration";
 import Events from "./page/Events";
-// import Home from "./page/Home";
+import Home from "./page/Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+
           <Route path="/events" exact>
             <AllEventPage />
           </Route>

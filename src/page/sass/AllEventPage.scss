@@ -7,3 +7,55 @@
     // background: #010615;
     flex-wrap: wrap;
 }
+
+.allEventPage__web {
+    position: absolute;
+    > img {
+        object-fit: contain;
+        height: 100px;
+    }
+}
+.allEventPage__web1 {
+    top: 14%;
+    left: 23%;
+    z-index: 99;
+}
+.allEventPage__web2 {
+    top: 0px;
+    right: 0px;
+    > img {
+        opacity: 0.7;
+        height: 200px;
+    }
+}
+.allEventPage__web3 {
+    top: 50%;
+    left: 7%;
+    > img {
+        height: 170px;
+    }
+}
+.allEventPage__web4 {
+    bottom: 0;
+    right: 10px;
+    transform: rotate(90deg);
+    > img {
+        height: 400px;
+    }
+}
+.allEventPage__web5 {
+    top: 70%;
+    left: 40%;
+    z-index: 99;
+    > img {
+        height: 150px;
+    }
+}
+.allEventPage__web6 {
+    top: -20px;
+    left: -10px;
+    > img {
+        opacity: 0.7;
+        height: 160px;
+    }
+}
