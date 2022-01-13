@@ -7,7 +7,7 @@ function AllEventCard(props) {
   useEffect(() => {
     VanillaTilt.init(document.querySelector(".cover"), {
       max: 25,
-      speed: 400,
+      speed: 1900,
       glare: false,
       "max-glare": 1,
       gyroscope: true,

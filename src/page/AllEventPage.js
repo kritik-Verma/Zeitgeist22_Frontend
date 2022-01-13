@@ -8,22 +8,22 @@ function AllEventPage() {
   return (
     <div className="allEventPage">
       <div className="allEventPage__web1 allEventPage__web">
-        <img src="/images/web.png" alt="" />
+        <img src="/web.png" alt="" />
       </div>
       <div className="allEventPage__web allEventPage__web2">
-        <img src="/images/web4.png" alt="" />
+        <img src="/web4.png" alt="" />
       </div>
       <div className="allEventPage__web allEventPage__web3">
-        <img src="/images/web3.png" alt="" />
+        <img src="/web3.png" alt="" />
       </div>
       <div className="allEventPage__web allEventPage__web4">
-        <img src="/images/web2.png" alt="" />
+        <img src="/web2.png" alt="" />
       </div>
       <div className="allEventPage__web allEventPage__web5">
-        <img src="/images/web3.png" alt="" />
+        <img src="/web3.png" alt="" />
       </div>
       <div className="allEventPage__web allEventPage__web6">
-        <img src="/images/web.png" alt="" />
+        <img src="/web.png" alt="" />
       </div>
       <div
         className="allEventPage__card1"
